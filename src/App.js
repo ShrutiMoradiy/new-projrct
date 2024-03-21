@@ -24,7 +24,7 @@ function App() {
                   <div class="col">Available Rewards</div>
                 </div>
               </div>
-              <div class="col">$234
+              <div class="col">$234s
                 <div class="row">
                   <div class="col">Your Savings</div>
                 </div>
