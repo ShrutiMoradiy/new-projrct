@@ -120,7 +120,20 @@ p {
   align-items: left;
   justify-content: center;
 } */
-
+.sin-in {
+  border: 1.32px solid #DDDDDD;
+  background: #e1e0e0;
+  /* width: 411px;
+  height: 168px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  border: 1.32px 0px 0px 0px;
+  opacity: 0px;
+  display: inline-block; */
+  width: 475px;
+  height: 168px;
+  padding: 23px 32px 23px 32px; 
+}
 .App-link {
   color: #61dafb;
 }
