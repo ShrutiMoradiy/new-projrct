@@ -20,18 +20,18 @@ function App() {
           
           <div className="container text-center fns">
             <div className="row">
-              <div className="col"><button type="button" class="btn-secondary" disabled>2024</button>
+              <div className="col"><button>2024</button>
                 <div className="row">
                 <div className="col cont">Zen Coins</div>
                 </div>
               </div>
               
-              <div className="col">20
+              <div className="col"><button>20</button>
                 <div className="row">
                   <div className="col cont">Available Rewards</div>
                 </div>
               </div>
-              <div className="col">$234s
+              <div className="col"><button>$234</button>
                 <div className="row">
                   <div className="col cont">Your Savings</div>
                 </div>
@@ -46,6 +46,11 @@ function App() {
           <label for="customRange1" className="form-label">Tier 3 <span className='tier'>10000</span></label>
         </div>
 
+        
+
+        </div>
+        <div className='container sub-cont'>
+          <p className='shop-bene'>Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
         </div>
       </div>
       
