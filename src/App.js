@@ -10,7 +10,7 @@ function App() {
         <div class="row">
           <div className='col-lg-11'>
           <h3><span>Welcome</span> Manushri</h3> 
-          
+          git 
           </div>
           <div className='col-lg-1'>
             <h3><span>x</span></h3> 
@@ -54,13 +54,15 @@ function App() {
         <div className='container sub-cont'>
           <p className='shop-bene'>Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
         </div>
-        <div className='container-flud sin-in'>
-          <p>
-          Get $5 by inviting your friends
-          </p>
-        </div>
+        
       </div>
-      
+      <div className='container'>
+          <div className='sin-in'>
+            <div className='container bg-white con-frd'>
+            <p className='sin-hadding'>Get $5 by inviting your friends</p>
+            </div>
+          </div>
+        </div>
 
     </>
   );

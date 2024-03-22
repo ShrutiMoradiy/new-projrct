@@ -121,18 +121,16 @@ p {
   justify-content: center;
 } */
 .sin-in {
-  border: 1.32px solid #DDDDDD;
-  background: #e1e0e0;
-  /* width: 411px;
-  height: 168px;
-  gap: 0px;
-  border-radius: 12px 0px 0px 0px;
-  border: 1.32px 0px 0px 0px;
-  opacity: 0px;
-  display: inline-block; */
+  background: #f0f0f0;
   width: 475px;
+  height: 1344px;
+  padding: 23px 32px 23px 32px;
+}
+.con-frd {
+  width: 411px;
   height: 168px;
-  padding: 23px 32px 23px 32px; 
+  padding: 20px;
+  border-radius: 12px;
 }
 .App-link {
   color: #61dafb;
