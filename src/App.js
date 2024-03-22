@@ -23,18 +23,18 @@ function App() {
             <div className="row">
               <div className="col"><button> <span> <FaBolt /> </span>2024</button>
                 <div className="row">
-                <div className="col cont">Zen Coins</div>
+                <label className="col cont">Zen Coins</label>
                 </div>
               </div>
               
               <div className="col"><button> <span> <FaGift /> </span> 20</button>
                 <div className="row">
-                  <div className="col cont">Available Rewards</div>
+                  <label className="col cont">Available Rewards</label>
                 </div>
               </div>
               <div className="col"><button> <span> <FaPiggyBank /> </span> $234</button>
                 <div className="row">
-                  <div className="col cont">Your Savings</div>
+                  <label className="col cont">Your Savings</label>
                 </div>
               </div>
             </div>
@@ -63,8 +63,8 @@ function App() {
       <div className='container'>
           <div className='sin-in'>
             <div className='container bg-white con-frd'>
-              <div className='sin-hadding'>Get $5 by inviting your friends</div>
-              <div className='sin-subhad'>Signup to get referral link</div>
+              <h4 className='sin-hadding'>Get $5 by inviting your friends</h4>
+              <p className='sin-subhad'>Signup to get referral link</p>
               <div className='row'>
                 <div className='col'>
                   <input type='text' className='form-con' placeholder='e.g. 975884823'></input>
@@ -76,9 +76,9 @@ function App() {
             </div>
 
             <div className='container mt-20 bg-white con-work'>
-              <div className='sin-hadding'>How it works?</div>
-              <div className='work-subhad mt-10'>Earn ZenCoins with every purchase.</div>
-              <div className='work-subhad mt-10'>You can get up to 3 Zen coins for every $100 spent</div>
+              <h4 className='sin-hadding'>How it works?</h4>
+              <p className='work-subhad mt-10'>Earn ZenCoins with every purchase.</p>
+              <p className='work-subhad'>You can get up to 3 Zen coins for every $100 spent</p>
               <div class="message-box mt-30">
                 <div class="my-message">
                   <p className='msg-2'>Start here</p>
@@ -93,7 +93,13 @@ function App() {
                   <div className='col-lg-1'>
                     <div className='work-icon'> <span> <FaBolt /> </span></div> 
                   </div>
-                  <div className='col-lg-6'>
+                  <div className='col-lg-4'>
+                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
+                  </div>
+                  <div className='col-lg-1'>
+                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
+                  </div>
+                  <div className='col-lg-1'>
                     <div className='work-icon'> <span> <FaBolt /> </span></div> 
                   </div>
                   <div className='col-lg-1'>
@@ -103,7 +109,7 @@ function App() {
                 </div> 
               </div>
 
-              <div className='row'>
+              <div className='row mt-20'>
                 <div className='col-4'>
                    <label className="form-label-1">Tier 1 <span className='tier-1'>Shop for $50 to enroll</span></label> 
                 </div>
@@ -124,22 +130,25 @@ function App() {
             </div>
 
             <div className='container mt-20 bg-white con-join'>
-              <div className='sin-hadding'>Why join us?</div>
-              <div className='join-us mt-10'>We are more than just a brand, we are a family!</div>
+              <h4 className='sin-hadding'>Why join us?</h4>
+              <p className='join-us mt-10'>We are more than just a brand, we are a family!</p>
               <div className='join-fea mt-20'>
                 <span><FaCheckDouble /> </span>
-                Get 50 Points for following us on Facebook</div>
+                <label> Get 50 Points for following us on Facebook </label>
+              </div>
               <div className='join-fea mt-10'>
                 <span><FaCheckDouble /> </span>
-                Access to exclusive discount and coupons</div>
+                <label> Access to exclusive discount and coupons </label>
+              </div>
               <div className='join-fea mt-10'>
                 <span><FaCheckDouble /> </span>
-                Be part of our loyalty program</div>
+                <label> Be part of our loyalty program </label>
+              </div>
             </div>
 
             <div className='container mt-20 bg-white con-respond'>
-              <div className='sin-hadding'>Respond to a survey and earn 300 points</div>
-              <div className='join-us mt-10'>You can redeem these points on your purchase</div>
+              <h4 className='sin-hadding'>Respond to a survey and earn 300 points</h4>
+              <p className='join-us mt-10'>You can redeem these points on your purchase</p>
               
               <div className='respond mt-20'>
                 <div className='row'>
@@ -157,14 +166,15 @@ function App() {
             </div>
 
             <div className='container mt-20 bg-white con-point'>
-              <div className='sin-hadding'>Points</div>
-              <div className='join-us mt-10'>Earn more Points for different actions, and turn those Points into awesome rewards!</div>
+              <h4 className='sin-hadding'>Points</h4>
+              <p className='join-us mt-10'>Earn more Points for different actions, and turn those Points into awesome rewards!</p>
               <div className='join-fea mt-20'>
                 <span><FaCoins /> </span>
-                Ways to earn</div>
+                <label>Ways to earn</label>
+              </div>
               <div className='join-fea mt-10'>
                 <span><FaGift /> </span>
-                Ways to redeem
+                <label> Ways to redeem </label>
               </div>
             </div>
 

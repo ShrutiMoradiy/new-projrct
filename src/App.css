@@ -147,6 +147,7 @@ p {
   line-height: 20.8px;
   letter-spacing: -0.015em;
   text-align: left;
+  color: #000000;
   opacity: 50%;
   margin-bottom: 20px;
 }
@@ -190,12 +191,14 @@ input::placeholder {
   padding: 20px;
   box-shadow: 0px 4px 17px 0px #0000001F;
 }
-.work-subhad {
+.con-work .work-subhad {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin-bottom: 3px;
   letter-spacing: -0.015em;
   text-align: left;
+  color: #000000;
   opacity: 66%;
   
 }
@@ -210,6 +213,7 @@ input::placeholder {
 }
 .work-pro .work-icon {
   color: #FFCB2D;
+  
 }
 
 .msg-1 {
@@ -221,7 +225,7 @@ input::placeholder {
 
 }
 .message-box{
-  margin: 20px 0px 0px 65px;
+  /* margin: 20px 0px 0px 65px; */
   background: #FF186F;
   width: 95px;
   height: 42px;
