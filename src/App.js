@@ -1,8 +1,11 @@
 import logo from './logo.svg';
-import './App.css';
 import { FaArrowUp, FaCheckDouble, FaCrown, FaBolt, FaGift, FaPiggyBank, FaRocketchat, FaCoins  } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 import { PiWarningCircleLight } from "react-icons/pi";
+import { HiBolt } from "react-icons/hi2";
+import { BsArrowUpShort } from "react-icons/bs";
+import { RiCheckDoubleFill } from "react-icons/ri";
+import { IoChatbubbleOutline } from "react-icons/io5";
 
 function App() {
   return (
@@ -14,9 +17,9 @@ function App() {
             <span className='text-white font-semibold text-xl'><CgClose /></span>
             
           </div>
-          <p className='text-blue-700 flex pt-10'> <span className='p-1'> <FaCrown /> </span> Loyalty Program Name</p>
+          <p className='text-blue-700 flex pt-3'> <span className='p-1'> <FaCrown /> </span> Loyalty Program Name</p>
           <h2 className='text-white text-3xl uppercase '>Tier 1 Member</h2>
-          <p className='text-sm text-white opacity-65 text-normal pt-3'>Member since Octomber, 2023</p>
+          <p className='text-sm text-white opacity-65 text-normal pt-2'>Member since Octomber, 2023</p>
           
           <div className="container flex justify-between pt-4">
             <div className='text-white'>
@@ -39,143 +42,133 @@ function App() {
           
           </div>
 
-          <div className='w-24 h-10 bg-white rounded-sm flex ml-16 mt-4 justify-center'>
+          <div className='w-24 h-10 bg-white rounded-sm flex ml-16 mt-2.5 justify-center'>
             <p className='text-xs font-medium pt-2.5'>You are here
               <div className='bg-white origin-center rotate-45 rounded-br-sm w-3 h-3 mt-2'></div>
             </p>           
           </div>
 
           <div className='bg-neutral-800 min-w-80 h-2 rounded mt-3 items-center justify-between flex'>
-            <div className='bg-blue-700 w-6 h-6 rounded-full p-2'>
-              <div className='bg-blue-700 w-20 h-2 rounded flex justify-between'>
+            <div className='bg-blue-600 w-6 h-6 rounded-full p-2'>
+              <div className='bg-blue-600 w-20 h-2 rounded flex justify-between'>
                 <div className='bg-white w-2 h-2 rounded'></div>
               </div>
             </div>
             <div className='bg-white w-2 h-2 rounded'></div>
             <div className='bg-white w-2 h-2 rounded'></div>
           </div>
+          <div className='flex justify-between pt-3'>
+            <p className='text-white text-sm font-semibold'> Tier 1 </p>
+            <p className='text-white text-sm font-semibold grid'> Tier 2 <span className='text-sm font-normal opacity-50'>₹10000</span> </p>
+            <p className='text-white text-sm font-semibold grid'> Tier 3 <span className='text-sm font-normal opacity-50'>₹10000</span> </p>
+          </div>
 
         </div>
-        <div className='container bg-blue-700 w-96 h-20 inline-block p-3.5'>
+        <div className='container bg-blue-600 w-96 h-20 inline-block p-3.5'>
           <p className='text-white flex text-sm'> <span className='p-1'> <PiWarningCircleLight /> </span> Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
         </div>
         
       </div>
       <div className='container'>
-          <div className='bg-slate-50 w-96'>
-            <div className='container bg-white con-frd'>
-              <h4 className='sin-hadding'>Get $5 by inviting your friends</h4>
-              <p className='sin-subhad'>Signup to get referral link</p>
-              <div className='row'>
-                <div className='col'>
-                  <input type='text' className='form-con' placeholder='e.g. 975884823'></input>
-                </div>
-                <div className='col'>
-                  <button type='button' className='btn-signup'>Sign Up</button>
-                </div>
+          <div className='bg-slate-100 w-96 h-auto p-3'>
+            <div className='bg-white shadow rounded-xl p-3'>
+              <h4 className='text-xl font-medium'>Get $5 by inviting your friends</h4>
+              <p className='text-base font-normal opacity-55 pt-1'>Signup to get referral link</p>
+
+              <div className='flex justify-between pt-3'>
+              <input type='text' className='w-52 h-11 border border-slate-100 rounded p-2 placeholder:text-base font-normal opacity-55' placeholder='e.g. 975884823'></input>
+              <button type='button' className='bg-blue-600 text-white w-20 h-11 rounded'>Sign Up</button>
               </div>
+              
             </div>
 
-            <div className='container mt-20 bg-white con-work'>
-              <h4 className='sin-hadding'>How it works?</h4>
-              <p className='work-subhad mt-10'>Earn ZenCoins with every purchase.</p>
-              <p className='work-subhad'>You can get up to 3 Zen coins for every $100 spent</p>
-              <div class="message-box mt-30">
-                <div class="my-message">
-                  <p className='msg-2'>Start here</p>
+            <div className='bg-white shadow rounded-xl p-3 mt-3'>
+              <h4 className='text-xl font-medium'>How it works?</h4>
+              <p className='text-sm font-normal opacity-65 mt-1'>Earn ZenCoins with every purchase.</p>
+              <p className='text-sm font-normal opacity-65 mt-1'>You can get up to 3 Zen coins for every $100 spent</p>
+              
+              <div className='flex justify-between'>
+                <div className='w-24 h-10 bg-pink-600 rounded-sm flex mt-4 justify-center'>
+                  <p className='text-xs text-white font-medium pt-2.5'>Start here
+                    <div className='bg-pink-600 origin-center rotate-45 rounded-br-sm w-3 h-3 mt-2'></div>
+                  </p>         
+                </div>
+
+                <div className='float-end mr-1.5 mt-20 pt-3 flex-end'>
+                  <span className='text-yellow-400 text-5xl'> <FaCrown /> </span>  
                 </div>
               </div>
 
-              <div className='work-pro mt-10'>
-                <div className='row'>
-                  <div className='col-lg-4'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
-                  <div className='col-lg-1'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
-                  <div className='col-lg-4'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
-                  <div className='col-lg-1'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
-                  <div className='col-lg-1'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
-                  <div className='col-lg-1'>
-                    <div className='work-icon'> <span> <FaBolt /> </span></div> 
-                  </div>
+              <div className='bg-blue-700 w-72 h-2 rounded items-center justify-between flex'>
+                <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center'> <HiBolt /> </div>
+                <div className='flex justify-center -space-x-10'>
+                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 mix-blend-normal'> <HiBolt /> </div>
+                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 mix-blend-normal'> <HiBolt /> </div>
+                </div>
+                <div className='flex justify-center -space-x-10'>
+                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
+                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
+                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
+                </div>
 
-                </div> 
+
+              </div>
+              <div className='flex justify-between text-center pt-3'>
+                <p className='text-slate-950 text-sm font-semibold grid'> Tier 1 <span className='text-sm font-normal opacity-50'>Shop for $50 to enroll</span> </p>
+                <p className='text-slate-950 text-sm font-semibold grid'> Tier 2 <span className='text-sm font-normal opacity-50'>Shop for $50 + $10 to upgrade</span> </p>
+                <p className='text-slate-950 text-sm font-semibold grid'> Tier 3 <span className='text-sm font-normal opacity-50'>Shop for $50 + $25 to upgrade</span> </p>
               </div>
 
-              <div className='row mt-20'>
-                <div className='col-4'>
-                   <label className="form-label-1">Tier 1 <span className='tier-1'>Shop for $50 to enroll</span></label> 
-                </div>
-                <div className='col-4'>
-                  <label className="form-label-1">Tier 2 <span className='tier-1'>Shop for $50 + $10 to upgrade</span></label>
-                </div>
-                <div className='col-4'>
-                  <label className="form-label-1">Tier 3 <span className='tier-1'>Shop for $50 + $25 to upgrade</span></label>
-                </div>
-              </div>
-              <div className='shope-on mt-30'>
-                <div className='row'>
-                  <div className='col-1'> <span><FaArrowUp /></span> </div>
-                  <div className='col-11'> <p>Shop on Techmonk to upgrade your Tier</p> </div>
-                </div>
+
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-4 rounded-lg flex'>
+                
+                  <span className='bg-white text-blue-600 w-6 h-6 rounded-full p-1'><BsArrowUpShort /></span> 
+                  <p className='text-sm font-normal text-blue-600 pl-2'>Shop on Techmonk to upgrade your Tier</p> 
+              
               </div>
           
             </div>
 
-            <div className='container mt-20 bg-white con-join'>
-              <h4 className='sin-hadding'>Why join us?</h4>
-              <p className='join-us mt-10'>We are more than just a brand, we are a family!</p>
-              <div className='join-fea mt-20'>
-                <span><FaCheckDouble /> </span>
-                <label> Get 50 Points for following us on Facebook </label>
+            <div className='bg-white shadow rounded-xl p-3 mt-3'>
+              <h4 className='text-xl font-medium'>Why join us?</h4>
+              <p className='text-sm font-medium opacity-65 mt-1.5'>We are more than just a brand, we are a family!</p>
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-3 rounded-lg flex'>
+                <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
+                <label className='text-sm font-normal'> Get 50 Points for following us on Facebook </label>
               </div>
-              <div className='join-fea mt-10'>
-                <span><FaCheckDouble /> </span>
-                <label> Access to exclusive discount and coupons </label>
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
+                <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
+                <label className='text-sm font-normal'> Access to exclusive discount and coupons </label>
               </div>
-              <div className='join-fea mt-10'>
-                <span><FaCheckDouble /> </span>
-                <label> Be part of our loyalty program </label>
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
+                <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
+                <label className='text-sm font-normal'> Be part of our loyalty program </label>
               </div>
             </div>
 
-            <div className='container mt-20 bg-white con-respond'>
-              <h4 className='sin-hadding'>Respond to a survey and earn 300 points</h4>
-              <p className='join-us mt-10'>You can redeem these points on your purchase</p>
+            <div className='bg-white shadow rounded-xl p-3 mt-3'>
+              <h4 className='text-xl font-medium'>Respond to a survey and earn 300 points</h4>
+              <p className='text-sm font-medium opacity-65 mt-1.5'>You can redeem these points on your purchase</p>
               
-              <div className='respond mt-20'>
-                <div className='row'>
-                  <div className='col-lg-1'>
-                    <span> <FaRocketchat /> </span>
-                  </div>
-                  <div className='col-8'>
-                    <label> Which is your favorite speaker under ₹5,000 </label>
-                  </div>
-                  <div className='col-lg-3'>
-                    <button type='button' className='btn-respond'>Start</button>
-                  </div>
-                </div>
+              <div className='bg-gray-100 bg-opacity-70 h-16 p-2.5 mt-3 rounded-lg flex items-center'>
+                <span className='text-blue-700 font-medium pr-1'> <IoChatbubbleOutline  /> </span>
+                <label className='text-base font-normal'> Which is your favorite speaker under ₹5,000 </label>
+                <button type='button' className='bg-blue-600 text-white w-20 h-9 rounded-md'>Start</button>
+                  
+                
               </div>
             </div>
 
-            <div className='container mt-20 bg-white con-point'>
-              <h4 className='sin-hadding'>Points</h4>
-              <p className='join-us mt-10'>Earn more Points for different actions, and turn those Points into awesome rewards!</p>
-              <div className='join-fea mt-20'>
-                <span><FaCoins /> </span>
-                <label>Ways to earn</label>
+            <div className='bg-white shadow rounded-xl p-3 mt-3'>
+              <h4 className='text-xl font-medium'>Points</h4>
+              <p className='text-base font-medium opacity-65 mt-1.5'>Earn more Points for different actions, and turn those Points into awesome rewards!</p>
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
+                <span className='text-blue-600 p-1'><FaCoins /> </span>
+                <label className='text-base font-notmal pl-2'>Ways to earn</label>
               </div>
-              <div className='join-fea mt-10'>
-                <span><FaGift /> </span>
-                <label> Ways to redeem </label>
+              <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
+                <span className='text-blue-600 p-1'><FaGift /> </span>
+                <label className='text-base font-notmal pl-2'> Ways to redeem </label>
               </div>
             </div>
 
