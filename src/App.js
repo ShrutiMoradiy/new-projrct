@@ -94,7 +94,7 @@ function App() {
                   </p>         
                 </div>
 
-                <div className='float-end mr-1.5 mt-20 pt-3 flex-end'>
+                <div className='float-end mr-1.5 mt-9 flex-end'>
                   <span className='text-yellow-400 text-5xl'> <FaCrown /> </span>  
                 </div>
               </div>
