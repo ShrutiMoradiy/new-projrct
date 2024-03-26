@@ -1,47 +1,57 @@
 import logo from './logo.svg';
 import './App.css';
 import { FaArrowUp, FaCheckDouble, FaCrown, FaBolt, FaGift, FaPiggyBank, FaRocketchat, FaCoins  } from "react-icons/fa";
+import { CgClose } from "react-icons/cg";
 
 function App() {
   return (
      <>
       <div className='container mt-10'>
-        <div className="App App-header">
-        <div class="row">
-          <div className='col-lg-11'>
-            <h3><span>Welcome</span> Manushri</h3> 
+        <div className="bg-black w-96 rounded-t-3xl p-4">
+          <div class="flex justify-between">
+            <h3 className='text-xl leading-6 text-white font-semibold'><span className='font-thin'>Welcome</span> Manushri</h3> 
+            <span className='text-white font-semibold text-xl'><CgClose /></span>
+            
           </div>
-          <div className='col-lg-1'>
-            <h3><span>x</span></h3> 
-          </div>
-         </div>
-         <p> <FaCrown /> Loyalty Program Name</p>
-          <h2>Tier 1 Member</h2>
-          <p className='tier'>Member since Octomber, 2023</p>
+          <p className='text-blue-700 flex pt-10'> <span className='p-1'> <FaCrown /> </span> Loyalty Program Name</p>
+          <h2 className='text-white text-3xl uppercase '>Tier 1 Member</h2>
+          <p className='text-sm text-white opacity-65 text-normal pt-3'>Member since Octomber, 2023</p>
           
-          <div className="container text-center fns">
-            <div className="row">
-              <div className="col"><button> <span> <FaBolt /> </span>2024</button>
-                <div className="row">
-                <label className="col cont">Zen Coins</label>
-                </div>
+          <div className="container flex justify-between pt-4">
+            <div className='text-white'>
+              <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
+              <span className='text-blue-700 p-1'> <FaBolt /> </span>2024</button>
+              <p className="text-xs tetx-normal text-center p-1 opacity-95">Zen Coins</p>
+            </div>
+
+            <div className='text-white'>
+              <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
+              <span className='text-blue-700 p-1'> <FaGift /> </span> 20</button>
+              <p className="text-xs tetx-normal text-center p-1 opacity-95">Available Rewards</p>
+            </div>
+
+            <div className='text-white'>
+              <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
+              <span className='text-blue-700 p-1'> <FaPiggyBank /> </span> $234</button>
+              <p className="text-xs tetx-normal text-center p-1 opacity-95">Your Savings</p>
+            </div>
+          
+          </div>
+
+          <div className='bg-neutral-800 min-w-80 h-2 rounded mt-4 items-center flex'>
+            <div className='bg-blue-700 w-6 h-6 rounded-full p-2'>
+              <div className='bg-blue-700 w-20 h-2 rounded flex justify-between'>
+                <div className='bg-white w-2 h-2 rounded'></div>
               </div>
               
-              <div className="col"><button> <span> <FaGift /> </span> 20</button>
-                <div className="row">
-                  <label className="col cont">Available Rewards</label>
-                </div>
-              </div>
-              <div className="col"><button> <span> <FaPiggyBank /> </span> $234</button>
-                <div className="row">
-                  <label className="col cont">Your Savings</label>
-                </div>
-              </div>
             </div>
-        </div>
+            
+            <div className='bg-white w-2 h-2 rounded'></div>
+                <div className='bg-white w-2 h-2 rounded'></div>
+          </div>
 
-        <div className="container">
-        <div class="message-box bg-white">
+        {/* <div className="container">
+          <div class="message-box bg-white">
                 <div class="my-message">
                   <p className='msg-1'>You are here</p>
                 </div>
@@ -50,7 +60,7 @@ function App() {
           <label for="customRange1" className="form-label">Tier 1 </label> 
           <label for="customRange1" className="form-label">Tier 2 <span className='tier'>10000</span></label>
           <label for="customRange1" className="form-label">Tier 3 <span className='tier'>10000</span></label>
-        </div>
+        </div> */}
 
         
 
