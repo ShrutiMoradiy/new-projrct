@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { FaArrowUp, FaCheckDouble, FaCrown, FaBolt, FaGift, FaPiggyBank, FaRocketchat, FaCoins  } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
+import { PiWarningCircleLight } from "react-icons/pi";
 
 function App() {
   return (
@@ -21,57 +22,47 @@ function App() {
             <div className='text-white'>
               <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
               <span className='text-blue-700 p-1'> <FaBolt /> </span>2024</button>
-              <p className="text-xs tetx-normal text-center p-1 opacity-95">Zen Coins</p>
+              <p className="text-xs tetx-normal text-center pt-1 opacity-95">Zen Coins</p>
             </div>
 
             <div className='text-white'>
-              <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
+              <button className='bg-gray-400 rounded-2xl min-w-20 h-9 bg-opacity-10 flex items-center justify-center p-2'> 
               <span className='text-blue-700 p-1'> <FaGift /> </span> 20</button>
-              <p className="text-xs tetx-normal text-center p-1 opacity-95">Available Rewards</p>
+              <p className="text-xs tetx-normal text-center pt-1 opacity-95">Available Rewards</p>
             </div>
 
             <div className='text-white'>
               <button className='bg-gray-400 rounded-2xl w-20 h-9 bg-opacity-10 teaxt-center flex items-center text-center p-2'> 
               <span className='text-blue-700 p-1'> <FaPiggyBank /> </span> $234</button>
-              <p className="text-xs tetx-normal text-center p-1 opacity-95">Your Savings</p>
+              <p className="text-xs tetx-normal text-center pt-1 opacity-95">Your Savings</p>
             </div>
           
           </div>
 
-          <div className='bg-neutral-800 min-w-80 h-2 rounded mt-4 items-center flex'>
+          <div className='w-24 h-10 bg-white rounded-sm flex ml-16 mt-4 justify-center'>
+            <p className='text-xs font-medium pt-2.5'>You are here
+              <div className='bg-white origin-center rotate-45 rounded-br-sm w-3 h-3 mt-2'></div>
+            </p>           
+          </div>
+
+          <div className='bg-neutral-800 min-w-80 h-2 rounded mt-3 items-center justify-between flex'>
             <div className='bg-blue-700 w-6 h-6 rounded-full p-2'>
               <div className='bg-blue-700 w-20 h-2 rounded flex justify-between'>
                 <div className='bg-white w-2 h-2 rounded'></div>
               </div>
-              
             </div>
-            
             <div className='bg-white w-2 h-2 rounded'></div>
-                <div className='bg-white w-2 h-2 rounded'></div>
+            <div className='bg-white w-2 h-2 rounded'></div>
           </div>
 
-        {/* <div className="container">
-          <div class="message-box bg-white">
-                <div class="my-message">
-                  <p className='msg-1'>You are here</p>
-                </div>
-              </div>
-          <input type="range" className="form-range" id="customRange1"></input>
-          <label for="customRange1" className="form-label">Tier 1 </label> 
-          <label for="customRange1" className="form-label">Tier 2 <span className='tier'>10000</span></label>
-          <label for="customRange1" className="form-label">Tier 3 <span className='tier'>10000</span></label>
-        </div> */}
-
-        
-
         </div>
-        <div className='container sub-cont'>
-          <p className='shop-bene'>Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
+        <div className='container bg-blue-700 w-96 h-20 inline-block p-3.5'>
+          <p className='text-white flex text-sm'> <span className='p-1'> <PiWarningCircleLight /> </span> Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
         </div>
         
       </div>
       <div className='container'>
-          <div className='sin-in'>
+          <div className='bg-slate-50 w-96'>
             <div className='container bg-white con-frd'>
               <h4 className='sin-hadding'>Get $5 by inviting your friends</h4>
               <p className='sin-subhad'>Signup to get referral link</p>

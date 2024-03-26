@@ -55,9 +55,9 @@ p {
   text-align: left;
 
 }
-.form-range {
+  .form-range {
     margin-top: 35px;
-  } */
+  } 
 .form-label {
   display: inline-grid;
   padding: 0 39px;
@@ -112,7 +112,7 @@ p {
 
 
 }
-/* .App-header .cnl {
+.App-header .cnl {
   display: flex;
   flex-direction: column;
   align-items: left;
