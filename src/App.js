@@ -1,26 +1,30 @@
-import logo from './logo.svg';
-
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from './component/Home'; // Corrected path to Home component
+import Tier1 from './component/Tier1'; // Corrected path to Tier1 component
+import Tier2 from './component/Tier2'; // Corrected path to Tier2 component
 
 function App() {
   return (
-    <>
-      <section>
+    <BrowserRouter>
+      <div>
         <nav className='bg-black'>
           <div className='flex justify-center'>
-            <a className='text-lg font-medium text-white p-3' href='./'>Home</a>
-            <a className='text-lg font-medium text-white p-3' href='./tier-1.js'>Tier 1</a>
-            <a className='text-lg font-medium text-white p-3' href='./tier-2.js'> Tier 2</a>
+            <Link className='text-lg font-medium text-white p-3' to='/'>Home</Link>
+            <Link className='text-lg font-medium text-white p-3' to='/tier1'>Tier 1</Link>
+            <Link className='text-lg font-medium text-white p-3' to='/tier2'>Tier 2</Link>
           </div>
         </nav>
-      </section>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
 
-      <section className='relative'>
-        <div className='flex flex-col text-center px-5 py-28'>
-          <h1 className='text-9xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-black'> Welcome...! </h1>
-        </div>
-      </section>
-
-    </>  
+          <Route path="/tier1" element={<Tier1 />} />
+            
+          <Route path="/tier2" element={<Tier2 />} />
+            
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
