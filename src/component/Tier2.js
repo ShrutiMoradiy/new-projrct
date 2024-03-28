@@ -165,10 +165,10 @@ function Tier2() {
                 <h4 className='text-xl font-medium col-start-2'>Your Points History</h4>
               </div>
 
-              <div className='p-3 mt-3'>
-                <div className="-space-x-2.5">
-                  <button className="w-[140px] h-[30px] bg-[#f8f6fb] shadow-md border-2 border-gray-400 text-gray-400 items-center rounded-3xl mix-blend-normal"> Earned </button>
-                  <button className="w-[240px] h-[30px] border-r-2 border-t-2 border-b-2 border-gray-200 rounded-r-3xl mix-blend-normal"> Used </button>
+              <div className='p-2 mt-4'>
+                <div className="-space-x-3">
+                  <button className="w-[180px] h-[38px] bg-[#f8f6fb] shadow-md border-2 border-gray-400 text-gray-400 items-center rounded-3xl mix-blend-normal"> Earned </button>
+                  <button className="w-[220px] h-[38px] border-r-2 border-t-2 border-b-2 border-gray-200 rounded-r-3xl mix-blend-normal"> Used </button>
                 </div>
 
                 <div className='flex justify-between'>
