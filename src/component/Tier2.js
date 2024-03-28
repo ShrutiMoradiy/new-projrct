@@ -11,7 +11,7 @@ import { FiFacebook } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
 
 
-function Tier1() {
+function Tier2() {
   return (
      <>
       <section className="grid grid-col-2 place-content-center">
@@ -67,7 +67,7 @@ function Tier1() {
           </div>
           <div className='container bg-blue-600 w-[475px] h-[90px] inline-block p-4'>
             <p className='text-white flex text-sm font-medium'> <span className='text-xl p-1'> <PiWarningCircleLight /> </span> Shop for $300 before 22nd Apr, 2024 to upgrade your benefits. Shop Now!</p>
-          </div>
+          </div>  
           
         </div>
         <div className='container'>
@@ -129,7 +129,7 @@ function Tier1() {
                   <span className='text-blue-600 text-base p-1.5'><IoCopyOutline /></span> 
                 </div>
                 
-                <div className='flex justify-between pt-2'>
+                <div className='flex justify-between mt-3'>
                   <p className='text-sm font-normal opacity-[50%] text-left'>Share your link on</p>
                 </div>
 
@@ -165,96 +165,101 @@ function Tier1() {
                 <h4 className='text-xl font-medium col-start-2'>Your Points History</h4>
               </div>
 
-              <div className='bg-white p-3 mt-3'>
+              <div className='p-3 mt-3'>
                 <div className="-space-x-2.5">
                   <button className="w-[140px] h-[30px] bg-[#f8f6fb] shadow-md border-2 border-gray-400 text-gray-400 items-center rounded-3xl mix-blend-normal"> Earned </button>
                   <button className="w-[240px] h-[30px] border-r-2 border-t-2 border-b-2 border-gray-200 rounded-r-3xl mix-blend-normal"> Used </button>
-                  
                 </div>
+
                 <div className='flex justify-between'>
-                  <div className='w-24 h-10  rounded-sm flex mt-[35px] justify-center'>
-                    <p className='text-xs
-                     font-medium pt-2.5'>Start here </p>
+                  <div className='mt-[27px]'>
+                    <p className='text-base font-medium opacity-[80%] pr-2'>Innisfree Jeju Volcanic Pore Toner 2X</p>
+                    <p className='text-[#d18cab] text-sm font-medium pt-2.5'>Order #NYK-188512151-4559319</p>
+                    <p className='text-gray-500 text-sm font-normal pt-2.5 flex'>1x Platinum 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> Qty 1 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> 23 Jan 2024</p>
                   </div>
 
-                  <div className='float-end mr-1.5 mt-8 flex-end'>
-                    <span className='text-yellow-400 text-6xl'> <FaCrown /> </span>  
+                  <div className='mt-4'>
+                    <span className='text-[#6b7280b8] text-xl font-medium'> +1337 </span>  
                   </div>
                 </div>
+                <div className="border-gray-400 opacity-[70%] h-[2px] mt-3"> <hr /> </div>
 
-                <div className='bg-blue-700 w-[335px] h-2 rounded items-center justify-between flex'>
-                  <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center'> <HiBolt /> </div>
-                  <div className='flex justify-center -space-x-10'>
-                    <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 mix-blend-normal'> <HiBolt /> </div>
-                    <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 mix-blend-normal'> <HiBolt /> </div>
-                  </div>
-                  <div className='flex justify-center -space-x-10'>
-                    <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
-                    <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
-                    <div className='bg-yellow-400 text-white w-6 h-6 rounded-full p-1 flex justify-center mix-blend-normal'> <HiBolt /> </div>
+                <div className='flex justify-between'>
+                  <div className='mt-[20px]'>
+                    <p className='text-base font-medium opacity-[78%] pr-2'>Innisfree Hyaluronic Acid Green Tea Seed Serum</p>
+                    <p className='text-[#d18cab] text-sm font-medium pt-2.5'>Order #NYK-188512151-4559319</p>
+                    <p className='text-gray-500 text-sm font-normal pt-2.5 flex'>1x Platinum 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> Qty 1 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> 23 Jan 2024</p>
                   </div>
 
-
+                  <div className='mt-3'>
+                    <span className='text-[#6b7280b8] text-xl font-medium'> +1977 </span>  
+                  </div>
                 </div>
-                <div className='flex justify-between pt-3'>
-                  <p className='text-slate-950 text-sm font-semibold text-left grid'> Tier 1 <span className='text-xs font-normal opacity-50'>Shop for $50 to enroll</span> </p>
-                  <p className='text-slate-950 text-sm font-semibold text-center pl-6 grid'> Tier 2 <span className='text-xs font-normal opacity-50'>Shop for $50 + $10 to upgrade</span> </p>
-                  <p className='text-slate-950 text-sm font-semibold text-center pl-6 grid'> Tier 3 <span className='text-xs font-normal opacity-50'>Shop for $50 + $25 to upgrade</span> </p>
+                <div className="border-gray-400 opacity-[70%] h-[2px] mt-3"> <hr /> </div>
+
+                <div className='flex justify-between'>
+                  <div className='mt-[20px]'>
+                    <p className='text-base font-medium opacity-[78%] pr-2'>Plum 15% Vitamin C Glow Face Serum - DErmat Tested To Fight Dark Spots, Pigmentation & Dull Skin</p>
+                    <p className='text-[#d18cab] text-sm font-medium pt-2.5'>Order #NYK-188512151-4559319</p>
+                    <p className='text-gray-500 text-sm font-normal pt-2.5 flex'>1x Platinum 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> Qty 1 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> 23 Jan 2024</p>
+                  </div>
+
+                  <div className='mt-3'>
+                    <span className='text-[#6b7280b8] text-xl font-medium'> +694 </span>  
+                  </div>
                 </div>
+                <div className="border-gray-400 opacity-[70%] h-[2px] mt-3"> <hr /> </div>
 
+                <div className='flex justify-between'>
+                  <div className='mt-[20px]'>
+                    <p className='text-base font-medium opacity-[78%] pr-2'>Plum Bodylovin' Vanilla Vibes Body Oil</p>
+                    <p className='text-[#d18cab] text-sm font-medium pt-2.5'>Order #NYK-188512151-4559319</p>
+                    <p className='text-gray-500 text-sm font-normal pt-2.5 flex'>1x Platinum 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> Qty 1 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> 23 Jan 2024</p>
+                  </div>
 
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-4 rounded-lg flex'>
-                  
-                    <span className='bg-white text-blue-600 w-7 h-7 text-xl rounded-full p-1'><BsArrowUpShort /></span> 
-                    <p className='text-sm font-normal text-blue-600 pl-2'>Shop on Techmonk to upgrade your Tier</p> 
+                  <div className='mt-3'>
+                    <span className='text-[#6b7280b8] text-xl font-medium'> +284 </span>  
+                  </div>
+                </div>
+                <div className="border-gray-400 opacity-[70%] h-[2px] mt-3"> <hr /> </div>
+
+                <div className='flex justify-between'>
+                  <div className='mt-[20px]'>
+                    <p className='text-base font-medium opacity-[78%] pr-2'>Dot & Key Strawberry Dew SPF 50 Sunscreen Stick On-THe-Go</p>
+                    <p className='text-[#d18cab] text-sm font-medium pt-2.5'>Order #NYK-188512151-4559319</p>
+                    <p className='text-gray-500 text-sm font-normal pt-2.5 flex'>1x Platinum 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> Qty 1 
+                    <div className="bg-gray-600 w-[5px] h-[5px] rounded-full m-2.5"></div> 23 Jan 2024</p>
+                  </div>
+
+                  <div className='mt-3'>
+                    <span className='text-[#6b7280b8] text-xl font-medium'> +564 </span>  
+                  </div>
+                </div>
+                <div className="border-gray-400 opacity-[70%] h-[2px] mt-3"> <hr /> </div>
+
+                <div className='flex justify-between'>
+                  <div className='mt-[20px]'>
+                    <p className='text-base font-medium opacity-[78%] pr-2'>Plum BodyLovin' Hawaiian Rumba DEodorant Roll-On Controls Underarm Odor</p>
+
+                  </div>
+
+                  <div className='mt-3'>
+                    <span className='text-gray-500 text-xl font-medium'> +269 </span>  
+                  </div>
+                </div>
                 
-                </div>
-            
               </div>
 
-              <div className='bg-white shadow rounded-xl p-3 mt-3'>
-                <h4 className='text-xl font-medium'>Why join us?</h4>
-                <p className='text-base font-medium opacity-65 mt-1.5'>We are more than just a brand, we are a family!</p>
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-3 rounded-lg flex'>
-                  <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
-                  <label className='text-base font-normal'> Get 50 Points for following us on Facebook </label>
-                </div>
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
-                  <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
-                  <label className='text-base font-normal'> Access to exclusive discount and coupons </label>
-                </div>
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
-                  <span className='text-green-600 p-1'><RiCheckDoubleFill /> </span>
-                  <label className='text-base font-normal'> Be part of our loyalty program </label>
-                </div>
-              </div>
-
-              <div className='bg-white shadow rounded-xl p-3 mt-3'>
-                <h4 className='text-xl font-medium'>Respond to a survey and earn 300 points</h4>
-                <p className='text-base font-medium opacity-65 mt-1.5'>You can redeem these points on your purchase</p>
-                
-                <div className='bg-gray-100 bg-opacity-70 h-16 p-2.5 mt-3 rounded-lg flex items-center'>
-                  <span className='text-blue-700 text-xl font-medium pr-1.5'> <IoChatbubbleOutline  /> </span>
-                  <label className='text-base font-normal'> Which is your favorite speaker under ₹5,000 </label>
-                  <button type='button' className='bg-blue-600 text-white w-[70px] h-[37px] rounded-md'>Start</button>
-                    
-                  
-                </div>
-              </div>
-
-              <div className='bg-white shadow rounded-xl p-3 mt-3'>
-                <h4 className='text-xl font-medium'>Points</h4>
-                <p className='text-base font-medium opacity-65 mt-1.5'>Earn more Points for different actions, and turn those Points into awesome rewards!</p>
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
-                  <span className='text-blue-600 p-1'><FaCoins /> </span>
-                  <label className='text-base font-notmal pl-2'>Ways to earn</label>
-                </div>
-                <div className='bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-2 rounded-lg flex'>
-                  <span className='text-blue-600 p-1'><FaGift /> </span>
-                  <label className='text-base font-notmal pl-2'> Ways to redeem </label>
-                </div>
-              </div>
-
+              
 
             </div>
             
@@ -265,4 +270,4 @@ function Tier1() {
   );
 }
 
-export default Tier1;
+export default Tier2;
