@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { FaArrowUp, FaCheckDouble, FaCrown, FaBolt, FaGift, FaPiggyBank, FaRocketchat, FaCoins  } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 import { PiWarningCircleLight } from "react-icons/pi";
@@ -157,8 +157,6 @@ function Tier1() {
                   <span className='text-blue-700 text-xl font-medium pr-1.5'> <IoChatbubbleOutline  /> </span>
                   <label className='text-base font-normal'> Which is your favorite speaker under ₹5,000 </label>
                   <button type='button' className='bg-blue-600 text-white w-[70px] h-[37px] rounded-md'>Start</button>
-                    
-                  
                 </div>
               </div>
 
