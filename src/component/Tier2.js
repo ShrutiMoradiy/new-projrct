@@ -140,6 +140,23 @@ function Tier2() {
   const [showWatToRedeem, setShowWayToRedeem] = useState(false);
   const WayToRedeem = () => setShowWayToRedeem(!showWatToRedeem);
 
+  const [copied, setCopied] = useState(false);
+
+  const copiedText = [{id:1, url:"referral.link/user/harmit"}]; 
+  const Copy = () => {
+    const textToCopy = copiedText;
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        setCopied(true); 
+        setTimeout(() => {
+          setCopied(false); 
+        }, 1000);
+      })
+      .catch(error => {
+        console.error('Unable to copy: ', error);
+      });
+  };
+
   return (
     <>
       <section className="grid grid-col-2 place-content-center">
@@ -183,7 +200,7 @@ function Tier2() {
 
                   {showEarnedData ? (
                     <div>
-                      {earnData.map((item) => (
+                      {earnData.map((item, a) => (
                         <div key={item.id}>
                           <div className="flex justify-between">
                             <div className="mt-[27px]">
@@ -208,15 +225,18 @@ function Tier2() {
                               </span>
                             </div>
                           </div>
-                          <div className="border-gray-400 opacity-[70%] h-[2px] mt-3">
+                          {a !== earnData.length - 1  && (
+                            <div className="border-gray-400 opacity-[70%] h-[2px] mt-3">
                             <hr />
                           </div>
+                          )}
+                          
                         </div>
                       ))}
                     </div>
                   ) : (
                     <div className="h-auto">
-                      {usedData.map((item) => (
+                      {usedData.map((item, a) => (
                         
                         <div key={item.id}>
                           <div className="flex justify-between">
@@ -242,9 +262,11 @@ function Tier2() {
                               </span>
                             </div>
                           </div>
-                          <div className="border-gray-400 opacity-[70%] h-[2px] mt-3">
+                          {a !== usedData.length - 1  && (
+                            <div className="border-gray-400 opacity-[70%] h-[2px] mt-3">
                             <hr />
                           </div>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -487,12 +509,15 @@ function Tier2() {
                   </div>
 
                   <div className="bg-gray-100 bg-opacity-70 h-12 p-2.5 mt-4 rounded-lg flex justify-between">
-                    <p className="text-base font-normal pl-2">
-                      referral.link/user/harmit
-                    </p>
-                    <span className="text-blue-600 text-base p-1.5">
+                    {copiedText.map((item) => (
+                      <p className="text-base font-normal pl-2" key={item.id}>
+                        {item.url}
+                      </p>
+                    ))}
+                    <span className="text-blue-600 text-base p-1.5" onClick={Copy}>
                       <IoCopyOutline />
                     </span>
+                    {copied && <p className="text-green-600 text-base">Copied!</p>}
                   </div>
 
                   <div className="flex justify-between mt-3">
